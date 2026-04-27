@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>あなたの足に本当に合う靴を見つける｜足と靴の適合診断【株式会社キッド】</title>
+  <meta name="description" content="シューフィッターによる専門的な足と靴の適合診断。3D計測・骨格分析で、長年の「靴が痛い・合わない」悩みを根本解決。東京・八王子のLADIES KID'S（レディースキッド）。">
+  <meta name="keywords" content="靴診断,足診断,シューフィッター,靴が合わない,細足,外反母趾,八王子,レディースキッド,LADIES KID">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ladieskid.jp/">
+
+  <!-- OGP -->
+  <meta property="og:title" content="あなたの足に本当に合う靴を見つける｜足と靴の適合診断【株式会社キッド】">
+  <meta property="og:description" content="シューフィッターによる専門的な足と靴の適合診断。3D計測・骨格分析で、長年の「靴が痛い・合わない」悩みを根本解決。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ladieskid.jp/">
+  <meta property="og:image" content="https://ladieskid.jp/assets/images/og-image.jpg">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="LADIES KID'S">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="あなたの足に本当に合う靴を見つける｜足と靴の適合診断">
+  <meta name="twitter:description" content="シューフィッターによる専門的な足と靴の適合診断。長年の靴の悩みを根本解決。">
+
+  <!-- Google Analytics (GA4) - Replace G-XXXXXXXXXX with your measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+
+    // イベントトラッキング関数
+    function trackCTA(label) {
+      gtag('event', 'click', {
+        'event_category': 'CTA',
+        'event_label': label,
+        'value': 1
+      });
+    }
+  </script>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "LADIES KID'S（株式会社キッド）",
+    "description": "シューフィッターによる足と靴の適合診断・カスタムインソール・靴調整の専門店",
+    "url": "https://ladieskid.jp",
+    "telephone": "",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "八王子市",
+      "addressRegion": "東京都",
+      "addressCountry": "JP"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "足と靴の診断サービス",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "足と靴の適合診断",
+            "description": "シューフィッターによる専門的な靴診断。骨格分析・3D計測で最適な靴を提案。"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    /* ===== CSS VARIABLES ===== */
+    :root {
+      --cream: #FAF7F2;
+      --warm-white: #FFFDF9;
+      --deep-brown: #2C1810;
+      --mid-brown: #6B3D2E;
+      --light-brown: #A67C6D;
+      --gold: #C4965A;
+      --gold-light: #E8C088;
+      --sage: #7A8C6E;
+      --sage-light: #B5C4A8;
+      --charcoal: #3A3530;
+      --text-main: #2C2420;
+      --text-sub: #7A6F6A;
+      --border: rgba(166, 124, 109, 0.2);
+      --shadow: rgba(44, 24, 16, 0.08);
+      --font-serif: 'Noto Serif JP', 'Times New Roman', serif;
+      --font-sans: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+    }
+
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--cream);
+      color: var(--text-main);
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ===== GOOGLE FONTS ===== */
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+    /* ===== UTILITY ===== */
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border-top: 1px solid var(--gold);
+      padding-top: 8px;
+      margin-bottom: 20px;
+    }
+
+    .serif { font-family: var(--font-serif); }
+
+    /* ===== NAVIGATION ===== */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 16px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(250, 247, 242, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      letter-spacing: 0.15em;
+      color: var(--deep-brown);
+    }
+
+    .nav-logo span {
+      font-size: 10px;
+      display: block;
+      letter-spacing: 0.2em;
+      color: var(--light-brown);
+      font-family: var(--font-sans);
+      font-weight: 300;
+    }
+
+    .nav-cta {
+      background: var(--deep-brown);
+      color: var(--cream);
+      padding: 10px 24px;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: var(--font-sans);
+    }
+
+    .nav-cta:hover {
+      background: var(--mid-brown);
+      transform: translateY(-1px);
+    }
+
+    /* ===== HERO ===== */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding-top: 80px;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 70% 40%, rgba(196, 150, 90, 0.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 20% 80%, rgba(122, 140, 110, 0.06) 0%, transparent 50%),
+        var(--cream);
+    }
+
+    .hero-line {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 45%;
+      background: linear-gradient(135deg, rgba(196, 150, 90, 0.05) 0%, rgba(166, 124, 109, 0.1) 100%);
+      clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+      padding: 80px 40px 80px 80px;
+      animation: fadeInUp 1s ease both;
+    }
+
+    .hero-eyebrow {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 13px;
+      letter-spacing: 0.3em;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .hero-title {
+      font-family: var(--font-serif);
+      font-weight: 300;
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.5;
+      color: var(--deep-brown);
+      margin-bottom: 16px;
+    }
+
+    .hero-title em {
+      font-style: normal;
+      color: var(--mid-brown);
+      position: relative;
+    }
+
+    .hero-title em::after {
+      content: '';
+      position: absolute;
+      bottom: 2px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold), transparent);
+    }
+
+    .hero-subtitle {
+      font-size: 15px;
+      color: var(--text-sub);
+      margin-bottom: 48px;
+      line-height: 1.9;
+      font-weight: 300;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--deep-brown);
+      color: var(--cream);
+      padding: 18px 40px;
+      font-size: 14px;
+      letter-spacing: 0.12em;
+      cursor: pointer;
+      border: 2px solid var(--deep-brown);
+      transition: all 0.3s ease;
+      font-family: var(--font-sans);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-primary::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--mid-brown);
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+    }
+
+    .btn-primary:hover::before { transform: translateX(0); }
+    .btn-primary span { position: relative; z-index: 1; }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(44, 24, 16, 0.2);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--mid-brown);
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      border-bottom: 1px solid var(--mid-brown);
+      padding-bottom: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-secondary:hover { gap: 12px; }
+
+    .hero-badge {
+      position: absolute;
+      right: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+      background: var(--warm-white);
+      border: 1px solid var(--border);
+      padding: 28px 24px;
+      text-align: center;
+      box-shadow: 0 20px 60px var(--shadow);
+      animation: fadeInRight 1.2s ease 0.3s both;
+      max-width: 200px;
+    }
+
+    .hero-badge-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 48px;
+      line-height: 1;
+      color: var(--gold);
+      font-weight: 300;
+    }
+
+    .hero-badge-text {
+      font-size: 11px;
+      color: var(--text-sub);
+      letter-spacing: 0.05em;
+      margin-top: 8px;
+      line-height: 1.6;
+    }
+
+    /* ===== PAIN POINTS ===== */
+    #pain {
+      padding: 100px 0;
+      background: var(--warm-white);
+    }
+
+    .pain-intro {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .pain-intro h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(22px, 3vw, 32px);
+      font-weight: 300;
+      color: var(--deep-brown);
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+
+    .pain-intro p {
+      color: var(--text-sub);
+      font-size: 14px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2px;
+      background: var(--border);
+    }
+
+    .pain-item {
+      background: var(--warm-white);
+      padding: 36px 32px;
+      position: relative;
+      transition: background 0.3s ease;
+    }
+
+    .pain-item:hover { background: var(--cream); }
+
+    .pain-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 36px;
+      color: var(--gold-light);
+      font-weight: 300;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .pain-text {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--deep-brown);
+      margin-bottom: 8px;
+    }
+
+    .pain-sub {
+      font-size: 13px;
+      color: var(--text-sub);
+      line-height: 1.7;
+    }
+
+    .pain-check {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+
+    /* ===== MYTH/REALITY SECTION ===== */
+    #education {
+      padding: 100px 0;
+      background: var(--cream);
+    }
+
+    .edu-header {
+      margin-bottom: 60px;
+    }
+
+    .edu-header h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(22px, 3vw, 32px);
+      font-weight: 300;
+      color: var(--deep-brown);
+      line-height: 1.6;
+    }
+
+    .edu-header p {
+      font-size: 14px;
+      color: var(--text-sub);
+      margin-top: 16px;
+      max-width: 600px;
+    }
+
+    .edu-image-block {
+      margin-bottom: 48px;
+      position: relative;
+    }
+
+    .edu-image-block img {
+      width: 100%;
+      border-radius: 2px;
+      box-shadow: 0 4px 32px var(--shadow);
+    }
+
+    .edu-caption {
+      font-size: 12px;
+      color: var(--text-sub);
+      text-align: center;
+      margin-top: 12px;
+      letter-spacing: 0.05em;
+    }
+
+    .edu-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-top: 48px;
+    }
+
+    .edu-col {
+      padding: 36px;
+      background: var(--warm-white);
+      border-top: 3px solid var(--gold);
+    }
+
+    .edu-col h3 {
+      font-family: var(--font-serif);
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 16px;
+      color: var(--deep-brown);
+    }
+
+    .edu-col p {
+      font-size: 14px;
+      color: var(--text-sub);
+      line-height: 1.9;
+    }
+
+    /* ===== DIAGNOSIS FLOW ===== */
+    #flow {
+      padding: 100px 0;
+      background: var(--charcoal);
+      color: var(--cream);
+    }
+
+    .flow-header {
+      text-align: center;
+      margin-bottom: 70px;
+    }
+
+    .flow-header .section-label {
+      color: var(--gold-light);
+      border-color: var(--gold-light);
+    }
+
+    .flow-header h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(22px, 3vw, 32px);
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1.6;
+    }
+
+    .flow-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0;
+      position: relative;
+    }
+
+    .flow-step {
+      padding: 40px 32px;
+      position: relative;
+      border-right: 1px solid rgba(255,255,255,0.08);
+      transition: background 0.3s ease;
+    }
+
+    .flow-step:last-child { border-right: none; }
+    .flow-step:hover { background: rgba(255,255,255,0.04); }
+
+    .flow-step-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 52px;
+      color: rgba(196, 150, 90, 0.25);
+      font-weight: 300;
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+
+    .flow-step-title {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--gold-light);
+      margin-bottom: 12px;
+    }
+
+    .flow-step-text {
+      font-size: 13px;
+      color: rgba(250, 247, 242, 0.6);
+      line-height: 1.8;
+    }
+
+    .flow-arrow {
+      position: absolute;
+      top: 50%;
+      right: -12px;
+      transform: translateY(-50%);
+      color: var(--gold);
+      font-size: 20px;
+      z-index: 2;
+    }
+
+    /* ===== IMAGES GALLERY (Education) ===== */
+    #science {
+      padding: 100px 0;
+      background: var(--warm-white);
+    }
+
+    .science-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .science-header h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(22px, 3vw, 32px);
+      font-weight: 300;
+      color: var(--deep-brown);
+      line-height: 1.6;
+    }
+
+    .science-header p {
+      font-size: 14px;
+      color: var(--text-sub);
+      margin-top: 16px;
+    }
+
+    .science-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .science-card {
+      background: var(--cream);
+      padding: 8px;
+      box-shadow: 0 2px 16px var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .science-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 32px rgba(44, 24, 16, 0.12);
+    }
+
+    .science-card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+
+    .science-card-caption {
+      padding: 16px;
+      font-size: 13px;
+      color: var(--text-sub);
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
+
+    .science-card.wide {
+      grid-column: 1 / -1;
+    }
+
+    .science-card.wide img { height: 300px; }
+
+    /* ===== DIAGNOSIS SERVICE ===== */
+    #service {
+      padding: 100px 0;
+      background: var(--cream);
+    }
+
+    .service-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .service-content h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(22px, 3vw, 32px);
+      font-weight: 300;
+      color: var(--deep-brown);
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .service-content p {
+      font-size: 14px;
+      color: var(--text-sub);
+      line-height: 1.9;
+      margin-bottom: 16px;
+    }
+
+    .service-list {
+      list-style: none;
+      margin: 32px 0;
+    }
+
+    .service-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--text-main);
+    }
+
+    .service-list li::before {
+      content: '✓';
+      color: var(--sage);
+      font-size: 14px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .service-badge {
+      display: inline-block;
+      background: var(--deep-brown);
+      color: var(--cream);
+      font-size: 10px;
+      letter-spacing: 0.15em;
+      padding: 4px 10px;
+      margin-bottom: 8px;
+    }
+
+    .service-image {
+      position: relative;
+    }
+
+    .service-image img {
+      width: 100%;
+      box-shadow: 0 16px 48px var(--shadow);
+    }
+
+    .service-image::before {
+      content: '';
+      position: absolute;
+      top: -16px;
+      left: -16px;
+      right: 16px;
+      bottom: 16px;
+      border: 2px solid var(--gold);
+      z-index: -1;
+      opacity: 0.4;
+    }
+
+    /* ===== TESTIMONIAL / QUOTE ===== */
+    #voice {
+      padding: 100px 0;
+      background: var(--deep-brown);
+      color: var(--cream);
+      text-align: center;
+    }
+
+    .voice-quote {
+      font-family: var(--font-serif);
+      font-size: clamp(18px, 2.5vw, 26px);
+      font-weight: 300;
+      line-height: 1.8;
+      max-width: 700px;
+      margin: 0 auto 48px;
+    }
+
+    .voice-quote em {
+      font-style: normal;
+      color: var(--gold-light);
+    }
+
+    .voice-attribution {
+      font-size: 12px;
+      color: rgba(250, 247, 242, 0.5);
+      letter-spacing: 0.15em;
+    }
+
+    .voice-divider {
+      width: 60px;
+      height: 1px;
+      background: var(--gold);
+      margin: 32px auto;
+    }
+
+    /* ===== CTA SECTION ===== */
+    #cta {
+      padding: 120px 0;
+      background: var(--cream);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #cta::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(196, 150, 90, 0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .cta-label {
+      display: inline-block;
+      background: var(--sage-light);
+      color: var(--deep-brown);
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      padding: 6px 20px;
+      margin-bottom: 32px;
+    }
+
+    #cta h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(24px, 3.5vw, 40px);
+      font-weight: 300;
+      color: var(--deep-brown);
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    #cta p {
+      font-size: 14px;
+      color: var(--text-sub);
+      max-width: 480px;
+      margin: 0 auto 48px;
+      line-height: 1.9;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-cta-main {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--deep-brown);
+      color: var(--cream);
+      padding: 20px 48px;
+      font-size: 15px;
+      letter-spacing: 0.12em;
+      cursor: pointer;
+      border: 2px solid var(--deep-brown);
+      transition: all 0.3s ease;
+      font-family: var(--font-sans);
+    }
+
+    .btn-cta-main:hover {
+      background: var(--mid-brown);
+      border-color: var(--mid-brown);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(44, 24, 16, 0.25);
+    }
+
+    .btn-cta-sub {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 20px 36px;
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      cursor: pointer;
+      border: 2px solid var(--deep-brown);
+      color: var(--deep-brown);
+      background: transparent;
+      transition: all 0.3s ease;
+      font-family: var(--font-sans);
+    }
+
+    .btn-cta-sub:hover {
+      background: var(--deep-brown);
+      color: var(--cream);
+      transform: translateY(-3px);
+    }
+
+    .cta-note {
+      margin-top: 32px;
+      font-size: 12px;
+      color: var(--text-sub);
+      letter-spacing: 0.05em;
+    }
+
+    /* ===== FAQ ===== */
+    #faq {
+      padding: 100px 0;
+      background: var(--warm-white);
+    }
+
+    .faq-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .faq-header h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(22px, 3vw, 32px);
+      font-weight: 300;
+      color: var(--deep-brown);
+    }
+
+    .faq-list {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+    }
+
+    .faq-q {
+      padding: 24px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      cursor: pointer;
+      font-size: 15px;
+      color: var(--deep-brown);
+      font-weight: 500;
+    }
+
+    .faq-q-mark {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .faq-q-text { flex: 1; }
+
+    .faq-toggle {
+      font-size: 20px;
+      color: var(--gold);
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .faq-item.open .faq-toggle { transform: rotate(45deg); }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+      font-size: 14px;
+      color: var(--text-sub);
+      line-height: 1.9;
+    }
+
+    .faq-item.open .faq-a {
+      max-height: 300px;
+      padding-bottom: 24px;
+      padding-left: 32px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--deep-brown);
+      color: rgba(250, 247, 242, 0.6);
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      color: var(--cream);
+      letter-spacing: 0.2em;
+      margin-bottom: 16px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin: 24px 0;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--gold-light); }
+
+    .footer-copy {
+      font-size: 11px;
+      margin-top: 32px;
+      opacity: 0.5;
+    }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translate(40px, -50%); }
+      to { opacity: 1; transform: translate(0, -50%); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      nav { padding: 14px 20px; }
+      .hero-content { padding: 80px 24px; }
+      .hero-badge { display: none; }
+      .hero-line { display: none; }
+      .edu-columns { grid-template-columns: 1fr; }
+      .service-wrap { grid-template-columns: 1fr; gap: 40px; }
+      .service-image::before { display: none; }
+      .science-grid { grid-template-columns: 1fr; }
+      .flow-steps { grid-template-columns: 1fr; }
+      .flow-step { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
+      .flow-arrow { display: none; }
+      .cta-buttons { flex-direction: column; align-items: center; }
+      .btn-cta-main, .btn-cta-sub { width: 100%; max-width: 320px; justify-content: center; }
+    }
+
+    @media (max-width: 480px) {
+      .pain-grid { grid-template-columns: 1fr; }
+      .hero-title { font-size: 24px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-logo">
+      LADIES KID'S
+      <span>株式会社キッド</span>
+    </div>
+    <a href="https://ladieskid.jp/reserve_helpservice"
+       class="nav-cta"
+       onclick="trackCTA('nav-reservation')"
+       target="_blank" rel="noopener">
+      診断を予約する
+    </a>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-line"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Shoe Fitting Diagnosis</p>
+
+      <h1 class="hero-title serif">
+        その靴の痛み、<br>
+        実は<em>足に合っていない</em>ことが<br>
+        原因かもしれません。
+      </h1>
+
+      <p class="hero-subtitle">
+        「ずっと靴探しに苦労してきた」という方の多くは、<br>
+        自分の足の個性を知らないまま靴を選んでいます。<br>
+        シューフィッターが、あなたの足と靴の関係を<br>
+        科学的に診断します。
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="https://ladieskid.jp/reserve_helpservice"
+           class="btn-primary"
+           onclick="trackCTA('hero-reservation')"
+           target="_blank" rel="noopener">
+          <span>▶ 無料診断を予約する（要予約）</span>
+        </a>
+        <a href="https://ladieskid.jp/service#bio"
+           class="btn-secondary"
+           onclick="trackCTA('hero-service-detail')"
+           target="_blank" rel="noopener">
+          サービス詳細を見る →
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-badge">
+      <div class="hero-badge-num">3D</div>
+      <div class="hero-badge-text">計測技術で<br>あなたの足を<br>正確に把握</div>
+    </div>
+  </section>
+
+  <!-- ===== PAIN POINTS ===== -->
+  <section id="pain">
+    <div class="container">
+      <div class="pain-intro reveal">
+        <p class="section-label">Your Worries</p>
+        <h2 class="serif">こんなお悩み、ありませんか？</h2>
+        <p>あなたが感じているその不快感には、必ず原因があります。</p>
+      </div>
+
+      <div class="pain-grid">
+        <div class="pain-item reveal reveal-delay-1">
+          <div class="pain-number">01</div>
+          <div class="pain-check"></div>
+          <p class="pain-text">新しい靴を買っても<br>すぐ痛くなる</p>
+          <p class="pain-sub">足の形に合っていない靴を選び続けている可能性があります。</p>
+        </div>
+        <div class="pain-item reveal reveal-delay-2">
+          <div class="pain-number">02</div>
+          <div class="pain-check"></div>
+          <p class="pain-text">靴の中で足が<br>ズレる・かかとが脱げる</p>
+          <p class="pain-sub">細足の方によく見られる症状。ワイズが合っていないサインです。</p>
+        </div>
+        <div class="pain-item reveal reveal-delay-3">
+          <div class="pain-number">03</div>
+          <div class="pain-check"></div>
+          <p class="pain-text">外反母趾・タコ・<br>魚の目が気になる</p>
+          <p class="pain-sub">合わない靴を履き続けることで身体の不調につながります。</p>
+        </div>
+        <div class="pain-item reveal reveal-delay-4">
+          <div class="pain-number">04</div>
+          <div class="pain-check"></div>
+          <p class="pain-text">疲れやすく、<br>長時間歩けない</p>
+          <p class="pain-sub">適切な靴とインソールで、歩行の質は劇的に改善できます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION: MYTH VS REALITY ===== -->
+  <section id="education">
+    <div class="container">
+      <div class="edu-header reveal">
+        <p class="section-label">Myth &amp; Reality</p>
+        <h2 class="serif">
+          靴選びの「常識」、<br>実は間違いだらけかもしれません。
+        </h2>
+        <p>
+          「ゆったりした靴が楽」「脱ぎ履きしやすい靴が良い」——<br>
+          長年信じてきた靴の常識が、痛みや不調の原因になっているケースが多く見られます。
+        </p>
+      </div>
+
+      <div class="edu-image-block reveal">
+        <img src="assets/images/myth_reality.png"
+             alt="世間の誤解（Myth）と専門家の真実（Reality）の比較図。大きめの靴や脱ぎ履きしやすい靴が良いという誤解を解説。"
+             loading="lazy">
+        <p class="edu-caption">専門家が解説する「靴選びの誤解と真実」</p>
+      </div>
+
+      <div class="edu-columns reveal">
+        <div class="edu-col">
+          <h3 class="serif">❌ よくある誤解</h3>
+          <p>
+            「楽なように大きめ・幅広の靴を選ぶ」のが正しいと思っていませんか？
+            実は少しきつめが正解。足を左右からしっかり支えることで、健康的な足裏のアーチが保たれます。
+            大きすぎると足指が踏ん張り、疲労や外反母趾の原因になります。
+          </p>
+        </div>
+        <div class="edu-col">
+          <h3 class="serif">✅ 専門家の見解</h3>
+          <p>
+            「スッと脱ぎ履きできる靴が良い」は危険なサイン。
+            紐やかかとでしっかり固定しないと転倒リスクが激増します。
+            足が靴の中で滑らないホールド力こそが、安全と快適さの鍵です。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SCIENCE SECTION ===== -->
+  <section id="science">
+    <div class="container">
+      <div class="science-header reveal">
+        <p class="section-label">Scientific Approach</p>
+        <h2 class="serif">
+          自分の足を知ることが、<br>最高の一足への近道です。
+        </h2>
+        <p>足の形・骨格タイプ・重心バランスを科学的に把握することで、<br>本当に合う靴が初めてわかります。</p>
+      </div>
+
+      <div class="science-grid">
+        <div class="science-card reveal reveal-delay-1">
+          <img src="assets/images/foot_measurement.png"
+               alt="足幅・足囲（ワイズ）・足長（サイズ）の正しい計測方法と、アーチ崩れをチェックする浮かせ測りの解説図"
+               loading="lazy">
+          <p class="science-card-caption">Phase 1｜足のサイズ・アーチ診断</p>
+        </div>
+        <div class="science-card reveal reveal-delay-2">
+          <img src="assets/images/phase2_toetype.png"
+               alt="エジプト型・ギリシャ型・スクエア型のつま先形状と、サムファースト・センターファーストの重心バランス診断"
+               loading="lazy">
+          <p class="science-card-caption">Phase 2｜骨格タイプ・重心バランス診断</p>
+        </div>
+        <div class="science-card reveal reveal-delay-3">
+          <img src="assets/images/fitting_checklist.png"
+               alt="パンプスとウォーキングシューズの最終確認ポイント（フィッティングチェックリスト）"
+               loading="lazy">
+          <p class="science-card-caption">Phase 3｜フィッティング最終確認</p>
+        </div>
+        <div class="science-card reveal reveal-delay-4">
+          <img src="assets/images/flowchart.png"
+               alt="合わない靴からの卒業：靴をKeep・Modify・Discardするかを判断するフローチャート"
+               loading="lazy">
+          <p class="science-card-caption">Phase 4｜今ある靴の見直しフローチャート</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DIAGNOSIS FLOW ===== -->
+  <section id="flow">
+    <div class="container">
+      <div class="flow-header reveal">
+        <p class="section-label">How It Works</p>
+        <h2 class="serif">診断の流れ</h2>
+      </div>
+
+      <div class="flow-steps">
+        <div class="flow-step reveal reveal-delay-1">
+          <div class="flow-step-num">01</div>
+          <div class="flow-step-title">ご予約</div>
+          <p class="flow-step-text">オンラインまたはお電話にて、ご都合のよい日時をご予約ください。</p>
+        </div>
+        <div class="flow-step reveal reveal-delay-2">
+          <div class="flow-step-num">02</div>
+          <div class="flow-step-title">カウンセリング</div>
+          <p class="flow-step-text">現在の靴の悩み・お悩みの靴・お仕事・生活スタイルをヒアリング。</p>
+        </div>
+        <div class="flow-step reveal reveal-delay-3">
+          <div class="flow-step-num">03</div>
+          <div class="flow-step-title">計測・診断</div>
+          <p class="flow-step-text">足のサイズ・骨格・重心バランスを科学的に計測。お悩みの靴を持参いただけます。</p>
+        </div>
+        <div class="flow-step reveal reveal-delay-4">
+          <div class="flow-step-num">04</div>
+          <div class="flow-step-title">アドバイス</div>
+          <p class="flow-step-text">計測結果をもとに、靴選びの基準・インソール・靴の調整方法をご提案。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICE DETAIL ===== -->
+  <section id="service">
+    <div class="container">
+      <div class="service-wrap">
+        <div class="service-image reveal">
+          <img src="assets/images/section_diagnosis.png"
+               alt="シューフィッターによる足と靴の適合診断の様子。専門家が靴を詳しくチェックしている。"
+               loading="lazy">
+        </div>
+
+        <div class="service-content reveal reveal-delay-2">
+          <span class="service-badge">要予約</span>
+          <p class="section-label">Shoe Fitting Diagnosis</p>
+          <h2 class="serif">
+            足と靴の<br>適合診断
+          </h2>
+
+          <p>
+            多くの方がお持ちの「悩みある靴たち」を、専門のシューフィッターがチェック。
+            "本当に足に合う靴？"かどうかから、快適にして履き続けるか、断捨離するか——
+            診断・アドバイス・靴調整を行います。
+          </p>
+
+          <ul class="service-list">
+            <li>靴を持ち込むだけでプロが足との相性を診断</li>
+            <li>フィッティングポイントを細部までチェック</li>
+            <li>インソールの提案や靴のカスタマイズもご案内</li>
+            <li>「この靴、もう履かない方がいいかも…」のご相談も歓迎</li>
+            <li>あなたの足にとって最適な靴選びのポイントもお伝え</li>
+          </ul>
+
+          <a href="https://ladieskid.jp/reserve_helpservice"
+             class="btn-primary"
+             onclick="trackCTA('service-reservation')"
+             target="_blank" rel="noopener">
+            <span>▶ 診断を予約する</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VOICE / QUOTE ===== -->
+  <section id="voice">
+    <div class="container">
+      <p class="section-label" style="color:var(--gold-light);border-color:var(--gold-light);">Expert's Message</p>
+      <div class="voice-divider"></div>
+
+      <p class="voice-quote reveal">
+        快適な一日は、<em>足元から始まります。</em><br>
+        自身の足の個性を正しく理解し、科学的な根拠に基づいて靴を選ぶことが、<br>
+        身体全体の健康維持につながります。
+      </p>
+
+      <div class="voice-divider"></div>
+      <p class="voice-attribution">LADIES KID'S シューフィッター</p>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq">
+    <div class="container">
+      <div class="faq-header reveal">
+        <p class="section-label">FAQ</p>
+        <h2 class="serif">よくあるご質問</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span class="faq-q-mark">Q</span>
+            <span class="faq-q-text">診断には何を持参すればいいですか？</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-a">
+            お悩みの靴がございましたら、ぜひお持ちください。普段よく履く靴、痛みがある靴など、複数お持ちいただいても構いません。靴がなくても診断は受けていただけます。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span class="faq-q-mark">Q</span>
+            <span class="faq-q-text">診断にかかる時間はどのくらいですか？</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-a">
+            カウンセリング・計測・アドバイスを含め、目安として60〜90分程度です。お悩みの内容や持参される靴の数によって変わります。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span class="faq-q-mark">Q</span>
+            <span class="faq-q-text">年齢が高くても診断を受けられますか？</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-a">
+            はい、年齢を問わず受けていただけます。特に高齢の方には転倒予防・歩行改善の観点からも靴選びは重要です。お気軽にご相談ください。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span class="faq-q-mark">Q</span>
+            <span class="faq-q-text">靴を買わなくても診断だけ受けられますか？</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-a">
+            はい、購入のご検討は不要です。まずは自分の足を知ること、正しい靴選びの知識を得ることが大切と考えています。診断のみのご利用も歓迎しております。
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaq(this)">
+            <span class="faq-q-mark">Q</span>
+            <span class="faq-q-text">外反母趾や扁平足でも相談できますか？</span>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-a">
+            もちろんです。外反母趾・扁平足・ハンマートゥなど、足の個性に合わせたアドバイスを提供しています。症状が軽いうちからのご相談をおすすめします。
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section id="cta">
+    <div class="container">
+      <span class="cta-label">予約受付中</span>
+      <h2 class="serif reveal">
+        「この靴が合わない」ではなく、<br>
+        「自分の足に合う靴を知る」へ。
+      </h2>
+      <p class="reveal">
+        シューフィッターによる専門的な診断で、<br>
+        長年の靴の悩みに、科学的なアンサーを。
+      </p>
+
+      <div class="cta-buttons reveal">
+        <a href="https://ladieskid.jp/reserve_helpservice"
+           class="btn-cta-main"
+           onclick="trackCTA('cta-main-reservation')"
+           target="_blank" rel="noopener">
+          ▶ 診断を予約する（要予約）
+        </a>
+        <a href="https://ladieskid.jp/service#bio"
+           class="btn-cta-sub"
+           onclick="trackCTA('cta-service-detail')"
+           target="_blank" rel="noopener">
+          サービス詳細を見る
+        </a>
+      </div>
+
+      <p class="cta-note reveal">
+        ご予約はオンラインまたはお電話にて承っております。<br>
+        お悩みの靴はぜひご持参ください。
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p class="footer-logo">LADIES KID'S</p>
+    <p style="font-size:12px;letter-spacing:0.1em;">株式会社キッド</p>
+
+    <div class="footer-links">
+      <a href="https://ladieskid.jp/service#bio" target="_blank" rel="noopener">サービス詳細</a>
+      <a href="https://ladieskid.jp/reserve_helpservice" target="_blank" rel="noopener">診断を予約する</a>
+      <a href="https://ladieskid.jp/" target="_blank" rel="noopener">公式サイト</a>
+    </div>
+
+    <p class="footer-copy">© 2025 株式会社キッド / LADIES KID'S. All rights reserved.</p>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script>
+    // Scroll Reveal
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealEls.forEach(el => observer.observe(el));
+
+    // FAQ Toggle
+    function toggleFaq(el) {
+      const item = el.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+
+      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+
+      if (!isOpen) item.classList.add('open');
+
+      // GA tracking
+      if (typeof gtag !== 'undefined') {
+        const q = el.querySelector('.faq-q-text').textContent;
+        gtag('event', 'faq_open', { 'event_label': q });
+      }
+    }
+
+    // Nav scroll effect
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 50) {
+        nav.style.boxShadow = '0 4px 24px rgba(44,24,16,0.1)';
+      } else {
+        nav.style.boxShadow = 'none';
+      }
+    });
+  </script>
+
+</body>
+</html>
