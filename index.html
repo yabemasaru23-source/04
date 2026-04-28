@@ -1179,7 +1179,13 @@
   <!-- NAV -->
   <nav id="mainNav">
     <div class="nav-brand">
-      <span class="nav-logo">Ladies Kid's</span>
+      <a href="https://ladieskid.jp/" target="_blank" rel="noopener" style="display:flex;align-items:center;">
+        <img src="https://ladieskid.jp/i288/img/2020/Top_page/logo.png"
+             alt="LADIES KID'S レディースキッド"
+             style="height:36px;width:auto;"
+             onerror="this.style.display='none';document.getElementById('nav-logo-text').style.display='block';">
+        <span id="nav-logo-text" class="nav-logo" style="display:none;">Ladies Kid's</span>
+      </a>
       <span class="nav-sub">株式会社キッド</span>
     </div>
     <div class="nav-right">
@@ -1205,9 +1211,9 @@
       <div class="hero-left-content">
         <p class="hero-tag">Shoe Fitting Diagnosis</p>
         <h1 class="hero-title">
-          その靴の痛み、<br>
-          <span class="accent">足に合っていない</span><br>
-          ことが原因です。
+          靴が合わない本当の原因は、<br>
+          <span class="accent">「足の個性」を知らずに</span><br>
+          選んでいることです。
         </h1>
         <p class="hero-title-en">Ladies Kid's — Shoe Counselor</p>
         <div class="hero-cta-wrap">
@@ -1230,28 +1236,32 @@
     <!-- 右：数字＋インフォ -->
     <div class="hero-right">
       <p class="hero-catch">
-        「ずっと靴に悩んできた」という方の多くは、<br>
-        自分の足の個性を知らないまま靴を選んでいます。<br>
-        シューフィッターが、あなたの足と靴の関係を<br>
-        データと経験で科学的に診断します。
+        正しい「足の個性」を知らず、<br>
+        誤った基準で靴を選んでいることです。
+      </p>
+      <p style="font-size:15px;color:var(--text-mid);line-height:2.0;margin-bottom:32px;font-weight:400;">
+        足長・足幅・アーチ・重心バランス——<br>
+        あなたの足には固有の個性があります。<br>
+        シューカウンセラーが、データと経験で<br>
+        あなただけの靴選び基準を導きます。
       </p>
 
       <div class="hero-stats">
         <div class="stat-card">
-          <div class="stat-num">3D<span class="stat-unit"></span></div>
-          <div class="stat-label">計測技術で<br>足を正確に把握</div>
+          <div class="stat-num" style="font-size:28px;">デジタル<span class="stat-unit"></span></div>
+          <div class="stat-label">計測で足を<br>正確に把握</div>
         </div>
         <div class="stat-card">
-          <div class="stat-num">4<span class="stat-unit">Phase</span></div>
+          <div class="stat-num">4<span class="stat-unit">Step</span></div>
           <div class="stat-label">体系的な<br>診断プロセス</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num">3<span class="stat-unit">型</span></div>
-          <div class="stat-label">骨格タイプ別<br>アドバイス</div>
         </div>
         <div class="stat-card">
           <div class="stat-num">持<span class="stat-unit">込</span></div>
           <div class="stat-label">お悩みの靴を<br>そのまま持参OK</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">予<span class="stat-unit">約</span></div>
+          <div class="stat-label">完全予約制<br>マンツーマン対応</div>
         </div>
       </div>
 
@@ -1313,31 +1323,43 @@
     </div>
   </section>
 
-  <!-- ====== PHOTO BREAK ====== -->
+  <!-- ====== PHOTO BREAK（各ページへのリンク） ====== -->
   <div id="photo-break">
     <div class="photo-panel">
-      <!-- 店内フィッティングの様子 -->
-      <img src="https://ladieskid.jp/i288/img/2020/About_us/fitting_img.jpg"
-           alt="シューカウンセラーによるフィッティングの様子" loading="lazy">
-      <div class="photo-panel-overlay">
-        <span class="photo-panel-label">Fitting</span>
-      </div>
+      <a href="https://ladieskid.jp/service#bio" target="_blank" rel="noopener" style="display:block;height:100%;">
+        <img src="https://ladieskid.jp/i288/img/2020/About_us/fitting_img.jpg"
+             alt="シューカウンセラーによるフィッティングの様子" loading="lazy">
+        <div class="photo-panel-overlay">
+          <div>
+            <span class="photo-panel-label">Fitting Service</span>
+            <p style="font-size:13px;color:rgba(255,255,255,0.85);margin-top:6px;letter-spacing:0.05em;">パーソナルカウンセリング →</p>
+          </div>
+        </div>
+      </a>
     </div>
     <div class="photo-panel">
-      <!-- 代表・スタッフのカウンセリング -->
-      <img src="https://ladieskid.jp/i288/img/2020/About_us/About-us-top-img.jpg"
-           alt="レディースキッド店内の様子" loading="lazy">
-      <div class="photo-panel-overlay">
-        <span class="photo-panel-label">Our Store</span>
-      </div>
+      <a href="https://ladieskid.jp/shop_ikebukuro" target="_blank" rel="noopener" style="display:block;height:100%;">
+        <img src="https://ladieskid.jp/i288/img/2020/About_us/About-us-top-img.jpg"
+             alt="レディースキッド店内の様子" loading="lazy">
+        <div class="photo-panel-overlay">
+          <div>
+            <span class="photo-panel-label">Our Store</span>
+            <p style="font-size:13px;color:rgba(255,255,255,0.85);margin-top:6px;letter-spacing:0.05em;">池袋店 アクセス →</p>
+          </div>
+        </div>
+      </a>
     </div>
     <div class="photo-panel">
-      <!-- 診断シーン -->
-      <img src="https://ladieskid.jp/i288/img/2020/Yoyaku/shindanmv_img.jpg"
-           alt="足と靴の適合診断の様子" loading="lazy">
-      <div class="photo-panel-overlay">
-        <span class="photo-panel-label">Diagnosis</span>
-      </div>
+      <a href="https://www.kid-ltd.jp/" target="_blank" rel="noopener" style="display:block;height:100%;">
+        <img src="https://ladieskid.jp/i288/img/2020/Yoyaku/shindanmv_img.jpg"
+             alt="レディースキッド ウェブストア" loading="lazy">
+        <div class="photo-panel-overlay">
+          <div>
+            <span class="photo-panel-label">Web Store</span>
+            <p style="font-size:13px;color:rgba(255,255,255,0.85);margin-top:6px;letter-spacing:0.05em;">オンラインショップ →</p>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 
@@ -1391,7 +1413,7 @@
       <div class="sec-head reveal">
         <p class="sec-en">Scientific Approach</p>
         <h2 class="sec-title">自分の足を知ることが、<br>最高の一足への近道です。</h2>
-        <p class="sec-lead">4つのPhaseで体系的に診断。データと専門知識が、あなたの靴選びを変えます。</p>
+        <p class="sec-lead">足のサイズだけでは靴は合いません。形・アーチ・重心・フィッティングを総合的に診ることで、本当に合う靴が初めてわかります。</p>
       </div>
 
       <div class="science-grid">
@@ -1400,22 +1422,22 @@
                alt="足幅・足囲・足長の計測方法とアーチ診断"
                class="science-card-img" loading="lazy">
           <div class="science-card-body">
-            <span class="science-card-phase">Phase 01</span>
+            <span class="science-card-phase">Step 01</span>
             <div class="science-card-text">
-              <h4>足のサイズ・アーチ診断</h4>
-              <p>足長・足幅・足囲を正確に計測。アーチの崩れもチェックします。</p>
+              <h4>足のサイズ・アーチを計測</h4>
+              <p>足長・足幅・足囲をデジタル計測。体重をかけた状態と浮かせた状態を比較し、アーチの崩れもチェックします。</p>
             </div>
           </div>
         </div>
         <div class="science-card reveal reveal-d2">
           <img src="assets/images/phase2_toetype.png"
-               alt="骨格タイプと重心バランス診断"
+               alt="つま先の形状と重心バランスの診断"
                class="science-card-img" loading="lazy">
           <div class="science-card-body">
-            <span class="science-card-phase">Phase 02</span>
+            <span class="science-card-phase">Step 02</span>
             <div class="science-card-text">
-              <h4>骨格タイプ・重心バランス診断</h4>
-              <p>エジプト型・ギリシャ型・スクエア型など骨格に合った靴を特定。</p>
+              <h4>つま先形状・重心バランスを診断</h4>
+              <p>エジプト型・ギリシャ型・スクエア型など、つま先の形状と重心のかかり方を分析。合う靴のデザインが明確になります。</p>
             </div>
           </div>
         </div>
@@ -1424,10 +1446,10 @@
                alt="フィッティング最終確認ポイント"
                class="science-card-img" loading="lazy">
           <div class="science-card-body">
-            <span class="science-card-phase">Phase 03</span>
+            <span class="science-card-phase">Step 03</span>
             <div class="science-card-text">
-              <h4>フィッティング最終確認</h4>
-              <p>パンプス・ウォーキングシューズそれぞれのチェックポイントを精査。</p>
+              <h4>靴のフィッティングを精査</h4>
+              <p>パンプス・ウォーキングシューズそれぞれの確認ポイントに沿って、お持ち込みの靴が足に合っているかをチェックします。</p>
             </div>
           </div>
         </div>
@@ -1436,10 +1458,10 @@
                alt="靴の見直しフローチャート"
                class="science-card-img" loading="lazy">
           <div class="science-card-body">
-            <span class="science-card-phase">Phase 04</span>
+            <span class="science-card-phase">Step 04</span>
             <div class="science-card-text">
-              <h4>今ある靴の見直し判定</h4>
-              <p>Keep・Modify・Discardを科学的に判断。断捨離の基準が明確になります。</p>
+              <h4>今ある靴を「残す・調整・手放す」判定</h4>
+              <p>フローチャートに沿って、今お持ちの靴を「使い続ける・調整する・手放す」の3つに仕分け。断捨離の判断基準が明確になります。</p>
             </div>
           </div>
         </div>
