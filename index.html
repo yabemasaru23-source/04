@@ -1204,9 +1204,15 @@
 
   <!-- ====== HERO ====== -->
   <section id="hero">
-    <!-- 左：公式写真＋コピー -->
+    <!-- 左：動画背景＋コピー -->
     <div class="hero-left">
-      <div class="hero-left-img"></div>
+      <!-- 動画背景 -->
+      <video
+        class="hero-left-video"
+        autoplay muted loop playsinline
+        style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.6;">
+        <source src="assets/images/hero_video.mp4" type="video/mp4">
+      </video>
       <div class="hero-left-overlay"></div>
       <div class="hero-left-content">
         <p class="hero-tag">Shoe Fitting Diagnosis</p>
