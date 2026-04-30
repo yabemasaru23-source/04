@@ -147,16 +147,30 @@
       font-family: var(--f-zen);
     }
     .nav-btn {
-      background: var(--ai);
-      color: var(--shiro);
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+      background: linear-gradient(180deg, #C9A06A 0%, #B8935A 50%, #9E7A48 100%);
+      color: #fff;
       padding: 10px 22px;
-      font-size: 17px;
-      letter-spacing: 0.15em;
+      font-size: 13px;
+      letter-spacing: 0.1em;
       font-family: var(--f-zen);
-      transition: background 0.3s;
       white-space: nowrap;
+      border-radius: 4px;
+      box-shadow:
+        0 4px 0 #7A5C32,
+        0 6px 12px rgba(0,0,0,0.25),
+        inset 0 1px 0 rgba(255,255,255,0.25);
+      transition: all 0.15s ease;
+      cursor: pointer;
     }
-    .nav-btn:hover { background: var(--ai-light); }
+    .nav-btn:hover {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 #7A5C32, 0 3px 8px rgba(0,0,0,0.2);
+    }
 
     /* ============================
        HERO — 分割レイアウト
@@ -253,25 +267,81 @@
       align-items: flex-start;
     }
 
+    /* ===== 統一CTAボタン ===== */
+    .btn-cta-unified {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      background: linear-gradient(180deg, #C9A06A 0%, #B8935A 50%, #9E7A48 100%);
+      color: #fff;
+      padding: 18px 40px;
+      font-family: var(--f-zen);
+      letter-spacing: 0.12em;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      /* 立体感・影 */
+      box-shadow:
+        0 6px 0 #7A5C32,
+        0 8px 16px rgba(0,0,0,0.3),
+        inset 0 1px 0 rgba(255,255,255,0.25);
+      transition: all 0.15s ease;
+      position: relative;
+      text-decoration: none;
+    }
+    .btn-cta-unified:hover {
+      transform: translateY(3px);
+      box-shadow:
+        0 3px 0 #7A5C32,
+        0 4px 10px rgba(0,0,0,0.25),
+        inset 0 1px 0 rgba(255,255,255,0.2);
+    }
+    .btn-cta-unified:active {
+      transform: translateY(6px);
+      box-shadow:
+        0 0px 0 #7A5C32,
+        0 2px 6px rgba(0,0,0,0.2);
+    }
+    .btn-cta-unified .btn-caption {
+      font-size: 11px;
+      opacity: 0.88;
+      letter-spacing: 0.2em;
+      font-weight: 300;
+    }
+    .btn-cta-unified .btn-main {
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+    }
+
     .btn-hero {
       display: inline-flex;
       align-items: center;
       gap: 14px;
-      background: var(--kin);
+      background: linear-gradient(180deg, #C9A06A 0%, #B8935A 50%, #9E7A48 100%);
       color: var(--shiro);
       padding: 16px 36px;
       font-size: 17px;
       letter-spacing: 0.15em;
       font-family: var(--f-zen);
-      transition: all 0.3s;
+      border-radius: 4px;
+      box-shadow:
+        0 6px 0 #7A5C32,
+        0 8px 16px rgba(0,0,0,0.3),
+        inset 0 1px 0 rgba(255,255,255,0.25);
+      transition: all 0.15s ease;
       position: relative;
-      overflow: hidden;
     }
     .btn-hero::after {
       content: '→';
       transition: transform 0.3s;
     }
-    .btn-hero:hover { background: var(--kin-light); }
+    .btn-hero:hover {
+      transform: translateY(3px);
+      box-shadow: 0 3px 0 #7A5C32, 0 4px 10px rgba(0,0,0,0.25);
+    }
     .btn-hero:hover::after { transform: translateX(4px); }
 
     .btn-hero-ghost {
@@ -830,19 +900,27 @@
 
     .btn-service {
       display: inline-flex;
+      flex-direction: column;
       align-items: center;
-      gap: 14px;
-      background: var(--ai);
+      justify-content: center;
+      gap: 4px;
+      background: linear-gradient(180deg, #C9A06A 0%, #B8935A 50%, #9E7A48 100%);
       color: #fff;
-      padding: 18px 40px;
-      font-size: 17px;
-      letter-spacing: 0.15em;
+      padding: 18px 44px;
       font-family: var(--f-zen);
-      transition: all 0.3s;
+      border-radius: 4px;
+      box-shadow:
+        0 6px 0 #7A5C32,
+        0 8px 16px rgba(0,0,0,0.3),
+        inset 0 1px 0 rgba(255,255,255,0.25);
+      transition: all 0.15s ease;
+      cursor: pointer;
     }
-    .btn-service::after { content: '→'; transition: transform 0.3s; }
-    .btn-service:hover { background: var(--ai-light); }
-    .btn-service:hover::after { transform: translateX(4px); }
+    .btn-service:hover {
+      transform: translateY(3px);
+      box-shadow: 0 3px 0 #7A5C32, 0 4px 10px rgba(0,0,0,0.25);
+    }
+    .btn-service::after { content: none; }
 
     /* ============================
        QUOTE
@@ -1001,19 +1079,27 @@
 
     .btn-cta-primary {
       display: inline-flex;
+      flex-direction: column;
       align-items: center;
-      gap: 14px;
-      background: var(--kin);
+      justify-content: center;
+      gap: 4px;
+      background: linear-gradient(180deg, #C9A06A 0%, #B8935A 50%, #9E7A48 100%);
       color: #fff;
-      padding: 18px 40px;
-      font-size: 18px;
-      letter-spacing: 0.12em;
+      padding: 20px 52px;
       font-family: var(--f-zen);
-      transition: all 0.3s;
+      border-radius: 4px;
+      box-shadow:
+        0 6px 0 #7A5C32,
+        0 8px 16px rgba(0,0,0,0.3),
+        inset 0 1px 0 rgba(255,255,255,0.25);
+      transition: all 0.15s ease;
+      cursor: pointer;
     }
-    .btn-cta-primary::after { content: '→'; transition: transform 0.3s; }
-    .btn-cta-primary:hover { background: var(--kin-light); }
-    .btn-cta-primary:hover::after { transform: translateX(4px); }
+    .btn-cta-primary::after { content: none; }
+    .btn-cta-primary:hover {
+      transform: translateY(3px);
+      box-shadow: 0 3px 0 #7A5C32, 0 4px 10px rgba(0,0,0,0.25);
+    }
 
     .btn-cta-secondary {
       display: inline-flex;
@@ -1180,11 +1266,11 @@
   <nav id="mainNav">
     <div class="nav-brand">
       <a href="https://ladieskid.jp/" target="_blank" rel="noopener" style="display:flex;align-items:center;">
-        <img src="https://ladieskid.jp/i288/img/2020/Top_page/logo.png"
+        <img src="assets/images/logo.jpg"
              alt="LADIES KID'S レディースキッド"
-             style="height:36px;width:auto;"
+             style="height:40px;width:auto;"
              onerror="this.style.display='none';document.getElementById('nav-logo-text').style.display='block';">
-        <span id="nav-logo-text" class="nav-logo" style="display:none;">Ladies Kid's</span>
+        <span id="nav-logo-text" class="nav-logo" style="display:none;">Ladies' Kid</span>
       </a>
       <span class="nav-sub">株式会社キッド</span>
     </div>
@@ -1197,7 +1283,8 @@
          class="nav-btn"
          onclick="trackCTA('nav')"
          target="_blank" rel="noopener">
-        フィッティングを予約する
+        <span style="font-size:10px;opacity:0.85;letter-spacing:0.15em;font-weight:300;">パーソナルカウンセリングのご予約</span>
+        <span style="font-size:13px;font-weight:500;">予約する（要予約）</span>
       </a>
     </div>
   </nav>
@@ -1209,19 +1296,22 @@
       <div class="hero-left-img"></div>
       <div class="hero-left-overlay"></div>
       <div class="hero-left-content">
-        <p class="hero-tag">Personal Fitting</p>
+        <p class="hero-tag">Personal Counseling</p>
         <h1 class="hero-title">
-          あなたの足に<br>
-          <span class="accent">本当に合う靴</span>を、<br>
-          一緒に見つけます。
+          自分の足を正しく知って<br>
+          <span class="accent">我慢しなくていい</span><br>
+          本当に合う靴を見つける
         </h1>
-        <p class="hero-title-en">Ladies Kid's — Personal Fitting Service</p>
+        <p class="hero-title-en">Ladies' Kid — Personal Counseling Service</p>
         <div class="hero-cta-wrap">
           <a href="https://ladieskid.jp/reserve_helpservice"
              class="btn-hero"
              onclick="trackCTA('hero-main')"
              target="_blank" rel="noopener">
-            フィッティングを予約する（要予約）
+            <span style="display:flex;flex-direction:column;align-items:flex-start;gap:3px;">
+              <span style="font-size:11px;opacity:0.88;letter-spacing:0.2em;font-weight:300;">パーソナルカウンセリングのご予約</span>
+              <span style="font-size:16px;font-weight:500;">予約する（要予約）</span>
+            </span>
           </a>
           <a href="https://ladieskid.jp/service#bio"
              class="btn-hero-ghost"
@@ -1236,9 +1326,9 @@
     <!-- 右：数字＋インフォ -->
     <div class="hero-right">
       <p class="hero-catch">
-        正しい「足の個性」を知らず、<br>
-        誤った基準で靴を選んでいることが<br>
-        靴が合わない本当の原因です。
+        自分の足を正しく知って、<br>
+        我慢しなくていい、<br>
+        本当に合う靴を見つける
       </p>
       <p style="font-size:17px;color:var(--text-mid);line-height:2.0;margin-bottom:32px;font-weight:400;">
         足長・足幅・アーチ・重心バランス——<br>
@@ -1324,46 +1414,6 @@
     </div>
   </section>
 
-  <!-- ====== PHOTO BREAK（各ページへのリンク） ====== -->
-  <div id="photo-break">
-    <div class="photo-panel">
-      <a href="https://ladieskid.jp/service#bio" target="_blank" rel="noopener" style="display:block;height:100%;">
-        <img src="https://ladieskid.jp/i288/img/2020/About_us/fitting_img.jpg"
-             alt="シューカウンセラーによるフィッティングの様子" loading="lazy">
-        <div class="photo-panel-overlay">
-          <div>
-            <span class="photo-panel-label">Fitting Service</span>
-            <p style="font-size:13px;color:rgba(255,255,255,0.85);margin-top:6px;letter-spacing:0.05em;">パーソナルカウンセリング →</p>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="photo-panel">
-      <a href="https://ladieskid.jp/shop_ikebukuro" target="_blank" rel="noopener" style="display:block;height:100%;">
-        <img src="https://ladieskid.jp/i288/img/2020/About_us/About-us-top-img.jpg"
-             alt="レディースキッド店内の様子" loading="lazy">
-        <div class="photo-panel-overlay">
-          <div>
-            <span class="photo-panel-label">Our Store</span>
-            <p style="font-size:13px;color:rgba(255,255,255,0.85);margin-top:6px;letter-spacing:0.05em;">池袋店 アクセス →</p>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="photo-panel">
-      <a href="https://www.kid-ltd.jp/" target="_blank" rel="noopener" style="display:block;height:100%;">
-        <img src="https://ladieskid.jp/i288/img/2020/Yoyaku/shindanmv_img.jpg"
-             alt="レディースキッド ウェブストア" loading="lazy">
-        <div class="photo-panel-overlay">
-          <div>
-            <span class="photo-panel-label">Web Store</span>
-            <p style="font-size:13px;color:rgba(255,255,255,0.85);margin-top:6px;letter-spacing:0.05em;">オンラインショップ →</p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-
   <!-- ====== EDUCATION ====== -->
   <section id="education">
     <div class="container">
@@ -1413,47 +1463,61 @@
     <div class="container">
       <div class="sec-head reveal">
         <p class="sec-en">Scientific Approach</p>
-        <h2 class="sec-title">自分の足を知ることが、<br>最高の一足への近道です。</h2>
+        <h2 class="sec-title">〈パーソナルカウンセリング〉<br>自分の足を知り　最高の一足へ近づく</h2>
         <p class="sec-lead">足のサイズだけでは靴は合いません。形・アーチ・重心・フィッティングを総合的に診ることで、本当に合う靴が初めてわかります。</p>
       </div>
 
       <div class="science-grid">
+
+        <!-- Step 01 -->
         <div class="science-card reveal reveal-d1">
-          <img src="assets/images/foot_measurement.png"
-               alt="足幅・足囲・足長の計測方法とアーチ診断"
-               class="science-card-img" loading="lazy">
+          <div style="width:100%;aspect-ratio:16/9;overflow:hidden;">
+            <img src="assets/images/measurement.jpg"
+                 alt="専門スタッフによる足のデジタル計測の様子"
+                 style="width:100%;height:100%;object-fit:cover;object-position:center 40%;">
+          </div>
           <div class="science-card-body">
             <span class="science-card-phase">Step 01</span>
             <div class="science-card-text">
-              <h4>足のサイズ・アーチを計測</h4>
-              <p>足長・足幅・足囲をデジタル計測。体重をかけた状態と浮かせた状態を比較し、アーチの崩れもチェックします。</p>
+              <h4>デジタル計測による足サイズ・足底圧分析</h4>
+              <p>足長・足幅・足囲をデジタル計測。足圧の分布を測定し、あなたの足の個性と歩行特性を正確に把握します。</p>
             </div>
           </div>
         </div>
+
+        <!-- Step 02 -->
         <div class="science-card reveal reveal-d2">
-          <img src="assets/images/phase2_toetype.png"
-               alt="つま先の形状と重心バランスの診断"
-               class="science-card-img" loading="lazy">
+          <div style="width:100%;aspect-ratio:16/9;overflow:hidden;">
+            <img src="assets/images/fitting_staff.jpg"
+                 alt="シューカウンセラーが足をバイオメカニクス的にチェックしている様子"
+                 style="width:100%;height:100%;object-fit:cover;object-position:center 30%;">
+          </div>
           <div class="science-card-body">
             <span class="science-card-phase">Step 02</span>
             <div class="science-card-text">
-              <h4>つま先形状・重心バランスを診断</h4>
-              <p>エジプト型・ギリシャ型・スクエア型など、つま先の形状と重心のかかり方を分析。合う靴のデザインが明確になります。</p>
+              <h4>足部のバイオメカニクス的チェック</h4>
+              <p>専門家が実際に足を触り、骨格の状態・重心バランス・つま先形状を詳しく確認。データだけではわからない足の個性を見極めます。</p>
             </div>
           </div>
         </div>
+
+        <!-- Step 03 : fitting_checklist の図解部分のみ（上部テキスト除外） -->
         <div class="science-card reveal reveal-d3">
-          <img src="assets/images/fitting_checklist.png"
-               alt="フィッティング最終確認ポイント"
-               class="science-card-img" loading="lazy">
+          <div style="width:100%;aspect-ratio:16/9;overflow:hidden;position:relative;">
+            <img src="assets/images/fitting_checklist.png"
+                 alt="フィッティング確認ポイントの図解"
+                 style="width:100%;height:140%;object-fit:cover;object-position:center bottom;margin-top:-40%;">
+          </div>
           <div class="science-card-body">
             <span class="science-card-phase">Step 03</span>
             <div class="science-card-text">
-              <h4>靴のフィッティングを精査</h4>
-              <p>パンプス・ウォーキングシューズそれぞれの確認ポイントに沿って、お持ち込みの靴が足に合っているかをチェックします。</p>
+              <h4>足の特長に適した靴選びポイント解説</h4>
+              <p>パンプス・ウォーキングシューズそれぞれの確認ポイントに沿って、あなたの足と靴の相性を細部までチェックします。</p>
             </div>
           </div>
         </div>
+
+        <!-- Step 04 : そのまま -->
         <div class="science-card reveal reveal-d4">
           <img src="assets/images/flowchart.png"
                alt="靴の見直しフローチャート"
@@ -1461,11 +1525,12 @@
           <div class="science-card-body">
             <span class="science-card-phase">Step 04</span>
             <div class="science-card-text">
-              <h4>今ある靴を「残す・調整・手放す」判定</h4>
+              <h4>今の靴の判定、サンプル試着で真のフィット感体験</h4>
               <p>フローチャートに沿って、今お持ちの靴を「使い続ける・調整する・手放す」の3つに仕分け。断捨離の判断基準が明確になります。</p>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -1487,7 +1552,7 @@
         <div class="flow-item reveal reveal-d2">
           <div class="flow-step-circle"><span>2</span></div>
           <h4>カウンセリング</h4>
-          <p>現在の悩み・お仕事・生活スタイルをヒアリング。持参された靴もここで確認します。</p>
+          <p>現在の悩み・お仕事・生活スタイルをヒアリング。お客様のご状況を丁寧にお伺いします。</p>
         </div>
         <div class="flow-item reveal reveal-d3">
           <div class="flow-step-circle"><span>3</span></div>
@@ -1516,7 +1581,7 @@
           <span class="service-badge">Appointment Required</span>
           <div class="sec-head" style="margin-bottom:24px;">
             <p class="sec-en">Service</p>
-            <h2 class="sec-title">パーソナル<br>フィッティング</h2>
+            <h2 class="sec-title">パーソナル<br>カウンセリング</h2>
           </div>
           <p style="font-size:16px;color:var(--text-mid);line-height:2.0;font-weight:400;margin-bottom:8px;">
             シューカウンセラーがマンツーマンで対応。
@@ -1526,7 +1591,7 @@
           <ul class="service-list">
             <li>足長・足幅・アーチ・重心をデジタル計測</li>
             <li>つま先形状・骨格に合ったデザインをご提案</li>
-            <li>288サイズのパンプスから最適な一足を厳選</li>
+            <li>288サイズパンプス等で最適な靴を体感</li>
             <li>インソール・靴の調整もその場でご対応</li>
             <li>購入後のアフターフォローも安心</li>
           </ul>
@@ -1534,7 +1599,8 @@
              class="btn-service"
              onclick="trackCTA('service')"
              target="_blank" rel="noopener">
-            フィッティングを予約する
+            <span style="font-size:11px;opacity:0.88;letter-spacing:0.2em;font-weight:300;">パーソナルカウンセリングのご予約</span>
+            <span style="font-size:16px;font-weight:500;">予約する（要予約）</span>
           </a>
         </div>
       </div>
@@ -1552,7 +1618,7 @@
         身体全体の健康維持につながります。
       </p>
       <div class="quote-line"></div>
-      <p class="quote-attr">Ladies Kid's — Shoe Fitter</p>
+      <p class="quote-attr">Ladies' Kid — Shoe Fitter</p>
     </div>
   </section>
 
@@ -1567,7 +1633,7 @@
         <div class="faq-item">
           <div class="faq-q" onclick="toggleFaq(this)">
             <span class="faq-q-mark">Q.</span>
-            <span class="faq-q-text">パーソナルフィッティングとはどんなサービスですか？</span>
+            <span class="faq-q-text">パーソナルカウンセリングとはどんなサービスですか？</span>
             <span class="faq-toggle">+</span>
           </div>
           <div class="faq-a">シューカウンセラーがマンツーマンで足を計測し、あなたの足の個性（サイズ・アーチ・重心・つま先形状）を把握した上で、本当に合う靴をご提案するサービスです。完全予約制で、じっくりとご相談いただけます。</div>
@@ -1608,6 +1674,70 @@
     </div>
   </section>
 
+  <!-- ====== お客様の声 ====== -->
+  <section id="voices" style="padding:120px 0;background:var(--washi);">
+    <div class="container">
+      <div class="sec-head reveal" style="text-align:center;">
+        <p class="sec-en" style="justify-content:center;">Customer Voice</p>
+        <h2 class="sec-title">お客様の声</h2>
+        <p class="sec-lead">パーソナルカウンセリングをご体験いただいたお客様からのメッセージです。</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px;">
+
+        <!-- Voice 1 -->
+        <div class="reveal reveal-d1" style="background:#fff;padding:36px 32px;position:relative;border-top:3px solid var(--kin);">
+          <div style="font-family:'Playfair Display',serif;font-size:48px;color:var(--kin-pale);line-height:1;margin-bottom:16px;">"</div>
+          <p style="font-size:16px;color:var(--text-mid);line-height:2.0;font-weight:400;margin-bottom:24px;">
+            長年ヒールが合わず諦めていましたが、計測を受けて初めて自分の足が細いことを知りました。フィッティングしてもらった靴は、歩いてすぐ「これだ！」とわかりました。
+          </p>
+          <div style="display:flex;align-items:center;gap:16px;">
+            <div style="width:48px;height:48px;border-radius:50%;background:var(--kin-pale);display:flex;align-items:center;justify-content:center;font-size:20px;">👤</div>
+            <div>
+              <div style="font-size:15px;font-weight:500;color:var(--sumi);">M.T. 様</div>
+              <div style="font-size:13px;color:var(--text-light);margin-top:2px;">40代・東京都在住</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Voice 2 -->
+        <div class="reveal reveal-d2" style="background:#fff;padding:36px 32px;position:relative;border-top:3px solid var(--kin);">
+          <div style="font-family:'Playfair Display',serif;font-size:48px;color:var(--kin-pale);line-height:1;margin-bottom:16px;">"</div>
+          <p style="font-size:16px;color:var(--text-mid);line-height:2.0;font-weight:400;margin-bottom:24px;">
+            外反母趾で悩んでいて、どこへ行っても「仕方ない」と言われ続けていました。ここで初めて足に合う靴と出会えて、毎日歩くのが楽しくなりました。
+          </p>
+          <div style="display:flex;align-items:center;gap:16px;">
+            <div style="width:48px;height:48px;border-radius:50%;background:var(--kin-pale);display:flex;align-items:center;justify-content:center;font-size:20px;">👤</div>
+            <div>
+              <div style="font-size:15px;font-weight:500;color:var(--sumi);">K.S. 様</div>
+              <div style="font-size:13px;color:var(--text-light);margin-top:2px;">50代・神奈川県在住</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Voice 3 -->
+        <div class="reveal reveal-d3" style="background:#fff;padding:36px 32px;position:relative;border-top:3px solid var(--kin);">
+          <div style="font-family:'Playfair Display',serif;font-size:48px;color:var(--kin-pale);line-height:1;margin-bottom:16px;">"</div>
+          <p style="font-size:16px;color:var(--text-mid);line-height:2.0;font-weight:400;margin-bottom:24px;">
+            仕事でよく歩くのに、夕方になると足が痛くて困っていました。インソールの提案もしていただき、今では一日中快適に過ごせています。
+          </p>
+          <div style="display:flex;align-items:center;gap:16px;">
+            <div style="width:48px;height:48px;border-radius:50%;background:var(--kin-pale);display:flex;align-items:center;justify-content:center;font-size:20px;">👤</div>
+            <div>
+              <div style="font-size:15px;font-weight:500;color:var(--sumi);">Y.N. 様</div>
+              <div style="font-size:13px;color:var(--text-light);margin-top:2px;">30代・埼玉県在住</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p style="text-align:center;font-size:13px;color:var(--text-light);margin-top:32px;letter-spacing:0.1em;">
+        ※お客様の声はプレースホルダーです。実際の声に差し替えてご使用ください。
+      </p>
+    </div>
+  </section>
+
   <!-- ====== CTA FINAL ====== -->
   <section id="cta-final">
     <div class="cta-inner">
@@ -1620,7 +1750,7 @@
         <p>
           シューカウンセラーがマンツーマンで対応。<br>
           足を正確に計測し、あなただけの<br>
-          パーソナルフィッティングをご提供します。<br>
+          パーソナルカウンセリングをご提供します。<br>
           予約はオンラインまたはお電話にて。
         </p>
         <div class="cta-btn-group">
@@ -1628,7 +1758,8 @@
              class="btn-cta-primary"
              onclick="trackCTA('cta-final-main')"
              target="_blank" rel="noopener">
-            フィッティングを予約する（要予約）
+            <span style="font-size:11px;opacity:0.88;letter-spacing:0.2em;font-weight:300;">パーソナルカウンセリングのご予約</span>
+            <span style="font-size:16px;font-weight:500;">予約する（要予約）</span>
           </a>
           <a href="https://ladieskid.jp/service#bio"
              class="btn-cta-secondary"
@@ -1645,25 +1776,64 @@
         <div class="cta-right-note">
           <strong>📞 03-3981-3456</strong>
           受付時間 11〜20時<br>
-          お悩みの靴はぜひご持参ください
+          お気軽にご相談ください
         </div>
       </div>
     </div>
   </section>
+
+  <!-- ====== LINKS SECTION（下部） ====== -->
+  <div id="photo-break">
+    <div class="photo-panel">
+      <a href="https://ladieskid.jp/service#bio" target="_blank" rel="noopener" style="display:block;height:100%;">
+        <img src="assets/images/fitting_staff.jpg"
+             alt="シューカウンセラーによるパーソナルカウンセリングの様子" loading="lazy">
+        <div class="photo-panel-overlay">
+          <div>
+            <span class="photo-panel-label">Fitting Service</span>
+            <p style="font-size:15px;color:rgba(255,255,255,0.9);margin-top:6px;letter-spacing:0.05em;">パーソナルカウンセリング →</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="photo-panel">
+      <a href="https://ladieskid.jp/shop_ikebukuro" target="_blank" rel="noopener" style="display:block;height:100%;">
+        <img src="https://ladieskid.jp/i288/img/2020/About_us/About-us-top-img.jpg"
+             alt="レディースキッド店内の様子" loading="lazy">
+        <div class="photo-panel-overlay">
+          <div>
+            <span class="photo-panel-label">Our Store</span>
+            <p style="font-size:15px;color:rgba(255,255,255,0.9);margin-top:6px;letter-spacing:0.05em;">池袋店 アクセス →</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="photo-panel">
+      <img src="https://ladieskid.jp/i288/img/2020/Yoyaku/shindanmv_img.jpg"
+           alt="レディースキッド ウェブストア" loading="lazy">
+      <div class="photo-panel-overlay">
+        <div>
+          <span class="photo-panel-label">Web Store</span>
+          <p style="font-size:15px;color:rgba(255,255,255,0.9);margin-top:6px;letter-spacing:0.05em;">オンラインショップ</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <footer>
     <div class="container">
       <div class="footer-inner">
         <div class="footer-logo">
-          Ladies Kid's
+          Ladies' Kid
           <span>株式会社キッド</span>
         </div>
         <div class="footer-links">
           <a href="https://ladieskid.jp/service#bio" target="_blank" rel="noopener">サービス詳細</a>
-          <a href="https://ladieskid.jp/reserve_helpservice" target="_blank" rel="noopener">フィッティングを予約する</a>
+          <a href="https://ladieskid.jp/reserve_helpservice" target="_blank" rel="noopener">パーソナルカウンセリングを予約する</a>
           <a href="https://ladieskid.jp/shop_ikebukuro" target="_blank" rel="noopener">アクセス</a>
           <a href="https://ladieskid.jp/" target="_blank" rel="noopener">公式サイト</a>
+          <a href="https://www.kid-ltd.jp/" target="_blank" rel="noopener">オンラインショップ</a>
         </div>
       </div>
       <p class="footer-copy">© 2025 株式会社キッド / LADIES KID'S. All rights reserved.</p>
